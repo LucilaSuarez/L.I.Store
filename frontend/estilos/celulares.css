@@ -1,0 +1,141 @@
+/* CSS */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.page-container {
+    min-height: 100vh;       /* Ocupa al menos toda la altura de la ventana */
+    display: flex;
+    flex-direction: column;  /* Organiza hijos en columna: nav, main, footer */
+}
+
+.contenido-principal {
+    flex: 1;                 /* Crece para ocupar todo el espacio disponible */
+    display: flex;
+    flex-direction: column;
+}
+
+.img-celulares {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    padding: 40px 30px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+/* Aquí va tu CSS ya existente para .info-celulares, imágenes, botones, etc. */
+.info-celulares {
+    flex: 1 1 300px;
+    max-width: 350px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.info-celulares:hover {
+    transform: translateY(-5px);
+}
+
+.info-celulares img {
+    width: 65%;
+    max-height: 280px;
+    height: auto; 
+    object-fit: contain;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.info-celulares img:hover {
+    transform: scale(1.05);
+}
+
+.info-celulares h2 {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-size: 26px;
+    font-weight: bold;
+    color: rgb(36, 37, 38);
+}
+
+.info-celulares p {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(76, 76, 78);
+}
+
+.carrito-contenedor {
+    width: min-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+    display: flex;
+    border: 2px solid #ccc; /* Borde para el contenedor */
+    border-radius: 10px; /* Redondeo de los bordes */
+    padding: 5px; /* Espacio entre el borde y los botones */
+}
+
+.btn-carrito, .btn-eliminar-carrito{
+    background-color: rgb(220, 222, 225) ;
+    color: rgb(36, 37, 38);
+    padding: 10px 12px;
+    border-radius: 10px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-carrito:hover, .btn-eliminar-carrito:hover {
+    background-color: rgb(200, 202, 205);
+    transform: scale(1.05);
+}
+
+.contador {
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(36, 37, 38);
+}
+
+.carrito-icono {
+    position: relative;
+    color: white;
+    font-size: 28px;
+}
+
+.contador-global {
+    position: absolute;
+    top: -4px;
+    right: -10px;
+    background-color: transparent;
+    color: rgb(219, 212, 212);
+    padding: 2px 8px;
+    font-size: 14px;
+}
+
+/*tema oscuro*/
+body.oscuro .info-celulares{
+    background-color: rgb(86, 86, 88);
+    box-shadow: 0 4px 12px rgba(255,255,255,0.4);
+}
+
+body.oscuro .contador{
+    color: white;
+}
+
+body.oscuro .info-celulares h2{
+    color: white;
+}
+
+body.oscuro .info-celulares p{
+    color: rgb(220, 220, 220);
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- 519 7148 -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L. I. Store</title>
+    <link rel="icon" href="../img/L.I.Store.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../estilos/general.css">
+    <link rel="stylesheet" href="../estilos/principal.css">
+</head>
+
+<body>
+    <div class="page-container">
+        <nav class="navbar">
+            <div class="enlaces">
+                <h2 class="nombre-marca">L.I. Store</h2>
+            </div>
+            <div class="icono-container">
+                <a href="../screens/iniciarSesion.html"><i class="bi bi-person-circle" id="icono"></i></a>
+                <input class="tema" type="checkbox" id="darkmode-toggle"/>
+                <label class="tono_oscuro" for="darkmode-toggle"></label>
+            </div>
+        </nav>
+
+        <section class="seccion-principal container-fluid">
+            <div class="row">
+                <div class="contenido-izquierdo col-12 col-md-6">
+                    <p class="texto-mediano">Bienvenido a L.I. Store</p>
+                    <div class="input">
+                        <p class="texto-ingresar-nombre txt">Ingresa tu nombre:</p>
+                        <form action="#" class="form-nombre d-flex align-items-center gap-2">
+                            <input type="text" id="nombre" placeholder="ingrese su nombre" />
+                            <button type="submit" class="enviar txt">Enviar</button>
+                        </form>
+                    </div>
+                    <div >
+                        <p id="mensaje-error" class="is-invalid d-none mt-2"></p>
+                        <p id="saludo" class="is-valid d-none mt-2"></p>
+                        <p class="texto-grande">Tu tienda de tecnología favorita.</p>
+                        <p class="texto-grande">Encontrá los últimos modelos de celulares y accesorios al mejor precio.</p>
+                    </div>
+                </div>
+
+                <div class="contenido-derecho col-12 col-md-6">
+                    <video src="../img/video-inicio.mp4" autoplay muted loop playsinline></video>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer bg-dark text-white text-center py-3 row">
+            <div class="col-12 col-md-4">
+                <p class="nombre">Lucila Micaela Suarez</p>
+                <p class="nombre">Ignacio Pepe Valverde</p>
+                <p class="nombre">Juan Pablo Rodrigues Ferreira Maltez</p>
+            </div>
+            <div class="col-12 col-md-4">
+                <p class="nombre">Junio, 2025</p>
+                <p class="nombre">Proyecto final. Programación III</p>
+            </div>
+            <div class="imagen col-12 col-md-4 logo-utn" id="logo-utn">
+                <img src="../img/logo-utn.jpg" alt="Imagen UTN">
+            </div>
+        </footer>
+    </div>
+
+    <script src="../funciones/principal.js"></script>
+    <script src="../funciones/cambioTema.js"></script>
+</body>
+</html>

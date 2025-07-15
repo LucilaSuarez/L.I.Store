@@ -1,0 +1,122 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+.carrito {
+    display: flex;
+}
+.productos-carrito {
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.producto-item {
+    margin: 10px;
+    width: clamp(150px, 30vw, 350px);
+}
+
+.productos-carrito h2{
+    padding: 2%;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.producto-item {
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.total-carrito {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-radius: 3%;
+    padding: 15px;
+    max-width: 320px;    
+    margin: 0 auto; 
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.informacion-carrito h2{
+    margin-top: 5%;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.btn-pagar-compra{
+    background-color: rgb(220, 222, 225) ;
+    padding: 10px 12px;
+    border-radius: 10px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-pagar-compra a{
+    text-decoration: none;
+    color: rgb(36, 37, 38);
+}
+
+.btn-pagar-compra:hover {
+    transform: scale(1.05);
+    background-color: rgb(200, 202, 205);
+}
+
+.opcion {
+    font-size: 20px;
+}
+.opciones {
+    padding: 10px;
+}
+
+/*botones*/
+.carrito-contenedor {
+    width: min-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+    display: flex;
+    border: 2px solid #ccc; /* Borde para el contenedor */
+    border-radius: 10px; /* Redondeo de los bordes */
+    padding: 5px; /* Espacio entre el borde y los botones */
+}
+
+.btn-carrito, .btn-eliminar-carrito{
+    background-color: rgb(220, 222, 225) ;
+    color: rgb(36, 37, 38);
+    padding: 10px 12px;
+    border-radius: 10px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-carrito:hover, .btn-eliminar-carrito:hover {
+    background-color: rgb(200, 202, 205);
+    transform: scale(1.05);
+}
+
+/*tema oscuro*/
+
+body.oscuro .carrito {
+    background-color: #1c1c1c !important;
+}
+
+body.oscuro .producto-item {
+    background-color: rgb(86, 86, 88);
+    box-shadow: 0 4px 12px rgba(255,255,255,0.4);
+}
+
+body.oscuro .total-carrito{
+    background-color: rgb(86, 86, 88);
+    box-shadow: 0 4px 12px rgba(255,255,255,0.4);
+}

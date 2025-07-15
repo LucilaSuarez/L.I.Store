@@ -1,0 +1,7 @@
+.botonCancelar {
+    margin-top: 10px;
+    background-color: rgb(132, 139, 139);
+}
+.botonCancelar:hover {
+    background-color: rgb(172, 181, 181);
+}

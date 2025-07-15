@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>L. I. Store</title>
+    <link rel="icon" href="../img/L.I.Store.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../estilos/general.css" />
+    <link rel="stylesheet" href="../estilos/celulares.css" />
+</head>
+<body>
+    <div class="page-container">
+        <nav class="navbar">
+            <div class="enlaces">
+                <h2 class="nombre-marca">L.I. Store</h2>
+                <div class="opciones">
+                    <a href="../screens/celulares.html" class="opcion">celulares</a>
+                    <a href="../screens/accesorios.html" class="opcion">accesorios</a>
+                </div>
+            </div>
+            <div class="icono-container">
+                <input class="tema" type="checkbox" id="darkmode-toggle"/>
+                <label class="tono_oscuro" for="darkmode-toggle"></label>
+                <a href="../screens/carrito.html" id="btn-compra" class="carrito-icono">
+                    <i class="bi bi-cart"></i>
+                    <span id="contador-global" class="contador-global">0</span>
+                </a>
+                <a href="../screens/index.html" id="btn-salir"><i class="bi bi-box-arrow-right"></i></a>
+            </div>
+        </nav>
+
+        <main class="contenido-principal">
+            <div class="img-celulares">
+                <!-- contenido insertado dinamicamente -->
+            </div>
+        </main>
+
+        <footer class="footer bg-dark text-white text-center py-3 row">
+            <div class="col-12 col-md-4">
+                <p class="nombre">Lucila Micaela Suarez</p>
+                <p class="nombre">Ignacio Pepe Valverde</p>
+                <p class="nombre">Juan Pablo Rodrigues Ferreira Maltez</p>
+            </div>
+            <div class="col-12 col-md-4">
+                <p class="nombre">Junio, 2025</p>
+                <p class="nombre">Proyecto final. Programación III</p>
+            </div>
+            <div class="imagen col-12 col-md-4 logo-utn" id="logo-utn">
+                <img src="../img/logo-utn.jpg" alt="Imagen UTN" />
+            </div>
+        </footer>
+    </div>
+    <script src="../funciones/principal.js"></script>
+    <script src="../funciones/celulares.js"></script>
+    <script src="../funciones/cambioTema.js"></script>
+</body>
+</html>

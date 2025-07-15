@@ -1,0 +1,133 @@
+html, body {
+  height: 100%;      
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;  
+}
+#descargar-pdf{
+    background-color: transparent;
+    color: rgb(219, 212, 212);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#descargar-pdf:hover{
+    transform: scale(1.05);
+}
+
+.productos-ticket{
+    font-size: 17px;
+    color: #444;
+}
+
+.agradecimiento{
+    font-size: 19px !important;
+    color: #222;
+}
+
+.item-ticket {
+    font-size: 17px !important;
+    color: #444!important;
+    background-color: transparent !important;
+    border: none !important;
+    padding: 5px 0 !important;
+}
+
+.btn-reiniciar {
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(200, 202, 205);
+    padding: 10px 12px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-reiniciar a{
+    text-decoration: none;
+    color: rgb(36, 37, 38);
+}
+
+.btn-reiniciar:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: clamp(20px, 2vw, 30px);
+    color: rgb(36, 37, 38);
+    margin: 20px;
+}
+.ticket {
+    width: 70%;
+    height: 70%;
+    max-height: max-content;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    font-family: 'Segoe UI', sans-serif;
+    overflow-y: auto;
+}
+
+.nombre-ticket{
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    margin-top: 0%;
+    color: rgb(36, 37, 38);
+}
+
+.agradecimiento{
+    font-size: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;           
+    flex: 1;   
+}
+
+/*tema oscuro*/
+body.oscuro main{
+    background-color: #1c1c1c ;
+}
+
+body.oscuro main h1{
+    color: white;
+}
+
+body.oscuro .ticket{
+    background-color: rgb(86, 86, 88);
+    box-shadow: 0 4px 12px rgba(255,255,255,0.4);
+}
+
+body.oscuro .nombre-ticket{
+    color: white !important;
+}
+
+body.oscuro .productos-ticket{
+    color: white ;
+}
+
+body.oscuro .agradecimiento{
+    color: white;
+}
+
+body.oscuro .item-ticket {
+    color: white !important;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+body.oscuro .item-ticket span {
+    color: white !important;
+}
+.lista-productos li {
+    font-size: clamp(10px, 1.5vw, 20px);
+}
