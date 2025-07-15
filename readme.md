@@ -100,13 +100,13 @@ Los endpoints pueden probarse con Postman usando un token de autorización.
 
 ## Interfaces de Usuario
 - ![Tabla de productos](./frontend/img/tablaAdmi.png)
-Tabla de los productos que ve el administrador donde se pueden crear, modificar y desactivar productos mediante endpoints protegidos.
+ Tabla de los productos que ve el administrador donde se pueden crear, modificar y desactivar productos mediante endpoints protegidos.
 
 - ![Carrito](./frontend/img/carrito.png)
-Vista del carrito, donde el usuario puede ver los productos agregados, sus cantidades y agregar o eliminar elementos.
+ Vista del carrito, donde el usuario puede ver los productos agregados, sus cantidades y agregar o eliminar elementos.
 
 - ![Accesorios](./frontend/img/accesorios.png)
-El usuario visualiza los accesorios activos, con la opcion de agregarlos a su carrito. 
+ El usuario visualiza los accesorios activos, con la opcion de agregarlos a su carrito. 
 
 
 ## Autores
