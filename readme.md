@@ -8,32 +8,6 @@ Proyecto final para Programación III de la carrera Tecnico Universitario en Pro
 L.I. Store es una aplicación web de e-commerce que permite a los usuarios visualizar productos (celulares y accesorios), agregarlos a un carrito y gestionar compras. Los administradores pueden dar de alta, baja o modificar productos desde un panel privado.
 
 
-## Estructura
-L. I. Store
-├── backend/
-│  ├── controllers/
-|  ├── data/
-|  ├── middlewares/
-│  ├── models/
-|  ├── node_modules/
-|  ├── public/
-│  ├── routes/
-|  ├── scripts/
-|  ├── .env
-|  ├── .gitignore
-|  ├── index.js
-|  ├── package-lock.json
-│  └── package.json
-├── frontend/
-│  ├── estilos/
-|  ├── funciones/
-│  ├── img/
-│  └── screens/
-├── DER  
-├── Guia_de_uso
-└── README.md
-
-
 ## Tecnologias Utilizadas
 Frontend: HTML5, CSS3, JavaScript (puro), Bootstrap 5
 - Backend: Node.js, Express
@@ -100,13 +74,16 @@ Los endpoints pueden probarse con Postman usando un token de autorización.
 
 ## Interfaces de Usuario
 - ![Tabla de productos](./frontend/img/tablaAdmi.png)
- Tabla de los productos que ve el administrador donde se pueden crear, modificar y desactivar productos mediante endpoints protegidos.
+  
+Tabla de los productos que ve el administrador donde se pueden crear, modificar y desactivar productos mediante endpoints protegidos.
 
 - ![Carrito](./frontend/img/carrito.png)
- Vista del carrito, donde el usuario puede ver los productos agregados, sus cantidades y agregar o eliminar elementos.
+
+Vista del carrito, donde el usuario puede ver los productos agregados, sus cantidades y agregar o eliminar elementos.
 
 - ![Accesorios](./frontend/img/accesorios.png)
- El usuario visualiza los accesorios activos, con la opcion de agregarlos a su carrito. 
+
+El usuario visualiza los accesorios activos, con la opcion de agregarlos a su carrito. 
 
 
 ## Autores
